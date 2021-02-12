@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(0.25turn, #573A25, #79553B, #573A25);
+}
+
+@font-face {
+    font-family: 'Minecraftia-Regular';
+    src: url("../fonts/Minecraftia-Regular.ttf");
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    position: relative;
+    top: 6px;
+    font-family: 'Minecraftia-Regular', sans-serif;
+    text-decoration: none;
+    line-height: 1.5em;
+    word-spacing: 0.3em;
+    color: aliceblue;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 6mm 4mm rgba(0, 0, 0, 0.596));
+}
+
+#wrap {
+    position: fixed;
+    top: 400px;
+    font-family: sans-serif;
+    font-size: 21px;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    color: #f00;
+    transition: transform .4s cubic-bezier(.25, .1, .25, 1);
+    filter: drop-shadow(0 0 0.75rem black);
+    z-index: 97;
+}
+
+#wrap:not(:target) {
+    transform: translate3d(-175px, 0, 0);
+}
+
+#wrap:target {
+    transform: translate3d(0, 0, 0);
+}
+
+#close {
+    height: 44px;
+    text-align: right;
+    display: block;
+    position: relative;
+    left: 120px;
+    bottom: 10px;
+}
+
+#open {
+    height: 44px;
+    text-align: right;
+    display: block;
+    margin-right: -77px;
+}
+
+#wrap:target #open,
+#wrap:not(:target) #close {
+    display: none;
+}
+
+#wrap:target #open {
+    display: none;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.nav a img {
+    width: 90px;
+    height: 90px;
+}
+
+.links {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.header {
+    background-image: url(../img/oakwood.png);
+    width: 200px;
+    padding: 0 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav {
+    padding: 25px;
+    width: 100px;
+}
+
+#pexipacklogo {
+    transform: translate(39%, -50%);
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+#centerText {
+    width: 1000px;
+    height: auto;
+    position: relative;
+    left: 450px;
+    margin-bottom: 50px;
+}
+
+.containerSlideshow1 {
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../img/oakwood.png);
+    border-radius: 0.3em;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.slid1,
+.slid2,
+.slid3 {
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+}
+
+.slid1 {
+    left: 0;
+}
+
+.slid2 {
+    left: 1000px;
+}
+
+.slid3 {
+    left: 2000px;
+}
+
+.containerSlide1 {
+    position: absolute;
+    left: 0px;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-name: anim_slide1;
+}
+
+@keyframes anim_slide1 {
+    0% {
+        left: 0px;
+    }
+    22% {
+        left: 0px;
+    }
+    33% {
+        left: -1000px;
+    }
+    45% {
+        left: -1000px;
+    }
+    66% {
+        left: -2000px;
+    }
+    90% {
+        left: -2000px;
+    }
+}
+
+footer {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/stone.png);
+}
+
+#PexiHead {
+    width: 100px;
+    height: auto;
+    position: relative;
+    top: 60px;
+    left: 580px;
+}
+
+footer p {
+    position: relative;
+    left: 600px;
+    width: 750px;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+    left: 900px;
+    top: 30px;
+    position: relative;
+}

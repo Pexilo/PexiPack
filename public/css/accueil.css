@@ -1,0 +1,469 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(0.25turn, #573A25, #79553B, #573A25);
+}
+
+@font-face {
+    font-family: 'Minecraftia-Regular';
+    src: url("../fonts/Minecraftia-Regular.ttf");
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 6mm 4mm rgba(0, 0, 0, 0.596));
+}
+
+#wrap {
+    position: fixed;
+    top: 400px;
+    font-family: sans-serif;
+    font-size: 21px;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    color: #f00;
+    transition: transform .4s cubic-bezier(.25, .1, .25, 1);
+    filter: drop-shadow(0 0 0.75rem black);
+    z-index: 97;
+}
+
+#wrap:not(:target) {
+    transform: translate3d(-175px, 0, 0);
+}
+
+#wrap:target {
+    transform: translate3d(0, 0, 0);
+}
+
+#close {
+    height: 44px;
+    text-align: right;
+    display: block;
+    position: relative;
+    left: 120px;
+    bottom: 10px;
+}
+
+#open {
+    height: 44px;
+    text-align: right;
+    display: block;
+    margin-right: -77px;
+}
+
+#wrap:target #open,
+#wrap:not(:target) #close {
+    display: none;
+}
+
+#wrap:target #open {
+    display: none;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.nav a img {
+    width: 90px;
+    height: 90px;
+}
+
+.links {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.header {
+    background-image: url(../img/oakwood.png);
+    width: 200px;
+    padding: 0 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav {
+    padding: 25px;
+    width: 100px;
+}
+
+#centerText {
+    width: 1000px;
+    height: auto;
+    position: relative;
+    left: 450px;
+    margin-bottom: 50px;
+}
+
+#pexipacklogo {
+    transform: translate(39%, -50%);
+    filter: drop-shadow(0 0 0.75rem black);
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    position: relative;
+    top: 6px;
+    font-family: 'Minecraftia-Regular', sans-serif;
+    text-decoration: none;
+    line-height: 1.5em;
+    word-spacing: 0.3em;
+    color: aliceblue;
+}
+
+.containerSlideshow1 {
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../img/oakwood.png);
+    border-radius: 0.3em;
+}
+
+.slid1,
+.slid2,
+.slid3 {
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+}
+
+.slid1 {
+    left: 0;
+}
+
+.slid2 {
+    left: 1000px;
+}
+
+.slid3 {
+    left: 2000px;
+}
+
+.containerSlide1 {
+    position: absolute;
+    left: 0px;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-name: anim_slide1;
+}
+
+@keyframes anim_slide1 {
+    0% {
+        left: 0px;
+    }
+    22% {
+        left: 0px;
+    }
+    33% {
+        left: -1000px;
+    }
+    45% {
+        left: -1000px;
+    }
+    66% {
+        left: -2000px;
+    }
+    90% {
+        left: -2000px;
+    }
+}
+
+#couleur {
+    width: 500px;
+    height: auto;
+    position: relative;
+    left: 500px;
+    width: 500px;
+    margin-top: 250px;
+}
+
+#greenContainer {
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/stone.png);
+    position: relative;
+    left: 1100px;
+    bottom: 350px;
+    border-radius: 0.3em;
+    margin-top: 50px;
+}
+
+#greenContainer div {
+    transform: translate(25%, 30%);
+    width: 200px;
+    height: 200px;
+    background-color: #21DD6F;
+    border-radius: 50%;
+    filter: drop-shadow(0 3mm 20mm black)
+}
+
+#greenContainer p {
+    position: relative;
+    top: 80px;
+    width: 300px;
+}
+
+.containerSlideshow2 {
+    width: 300px;
+    height: 400px;
+    bottom: 500px;
+    overflow: hidden;
+    position: relative;
+    left: 500px;
+    background-image: url(../img/oakwood.png);
+    border-radius: 0.3em;
+}
+
+.slid4,
+.slid5,
+.slid6 {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+}
+
+.slid4 {
+    left: 0;
+}
+
+.slid5 {
+    left: 300px;
+}
+
+.slid6 {
+    left: 600px;
+}
+
+.containerSlide2 {
+    left: 0px;
+    position: absolute;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: anim_slide2;
+}
+
+@keyframes anim_slide2 {
+    0% {
+        left: 0px;
+    }
+    22% {
+        left: 0px;
+    }
+    33% {
+        left: -300px;
+    }
+    45% {
+        left: -300px;
+    }
+    66% {
+        left: -600px;
+    }
+    90% {
+        left: -600px;
+    }
+}
+
+#weapon {
+    position: relative;
+    width: 500px;
+    height: auto;
+    left: 900px;
+    bottom: 200px;
+}
+
+.containerSlideshow3 {
+    width: 300px;
+    height: 400px;
+    bottom: 650px;
+    overflow: hidden;
+    position: relative;
+    left: 1100px;
+    background-image: url(../img/oakwood.png);
+    border-radius: 0.3em;
+}
+
+.slid7,
+.slid8,
+.slid9 {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+}
+
+.slid7 {
+    left: 0;
+}
+
+.slid8 {
+    left: 300px;
+}
+
+.slid9 {
+    left: 600px;
+}
+
+.containerSlide3 {
+    left: 0px;
+    position: absolute;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: anim_slide2;
+}
+
+#mob {
+    position: relative;
+    width: 500px;
+    height: auto;
+    left: 500px;
+    bottom: 350px;
+}
+
+.containerSlideshow4 {
+    margin-top: 40px;
+    width: 1000px;
+    height: 400px;
+    bottom: 550px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../img/oakwood.png);
+    border-radius: 0.3em;
+}
+
+.slid10,
+.slid11,
+.slid12 {
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+}
+
+.slid10 {
+    left: 0;
+}
+
+.slid11 {
+    left: 1000px;
+}
+
+.slid12 {
+    left: 2000px;
+}
+
+.containerSlide4 {
+    position: absolute;
+    left: 0px;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: anim_slide1;
+}
+
+#container {
+    position: relative;
+    width: 1000px;
+    height: auto;
+    left: 450px;
+    bottom: 500px;
+}
+
+#buttonDL {
+    position: relative;
+    left: 700px;
+    bottom: 500px;
+    width: 500px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0.3em;
+    box-shadow: 0 9px #704E35;
+    border: none;
+    background-image: url(../img/oak.png);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.637));
+}
+
+#buttonDL:hover {
+    background-image: url(../img/spruce.png);
+}
+
+#buttonDL:active {
+    background-image: url(../img/spruce.png);
+    box-shadow: 0 5px#5E462A;
+    transform: translateY(4px);
+}
+
+#buttonDL p {
+    line-height: 1.4em;
+}
+
+#buttonVersions {
+    position: relative;
+    left: 250px;
+    bottom: 400px;
+    width: 400px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0.3em;
+    box-shadow: 0 9px #5E462A;
+    border: none;
+    background-image: url(../img/spruce.png);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.637));
+}
+
+#buttonVersions:hover {
+    background-image: url(../img/dark.png);
+    box-shadow: 0 9px #3D2912;
+}
+
+#buttonVersions:active {
+    background-image: url(../img/dark.png);
+    box-shadow: 0 5px #3D2912;
+    transform: translateY(4px);
+}
+
+#buttonVersions p {
+    line-height: 1.4em;
+}
+
+footer {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/stone.png);
+}
+
+#PexiHead {
+    width: 100px;
+    height: auto;
+    position: relative;
+    top: 60px;
+    left: 580px;
+}
+
+footer p {
+    position: relative;
+    left: 600px;
+    width: 750px;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+    left: 900px;
+    top: 30px;
+    position: relative;
+}
