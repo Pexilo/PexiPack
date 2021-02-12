@@ -8,15 +8,15 @@ app.use(express.static(__dirname))
 
 
 app.get('/', (req, res) => {
-    res.render("accueil");
+    res.render("./public/html/accueil");
 });
 
 app.get('/Download', (req, res) => {
-    res.render("download");
+    res.render("./public/html/download");
 });
 
 app.get('/Informations', (req, res) => {
-    res.render("information");
+    res.render("./public/html/information");
 });
 
 
