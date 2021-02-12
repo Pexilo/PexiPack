@@ -23,7 +23,7 @@ function V2_9bis() {
         // OPEN NEW TAB 
         window.open('https://www.mediafire.com/file/nkpwyygr8ldh2e4/', '_blank');
         // THEN REDIRECT THIS PAGE 
-        window.location = "https://pexipack-website.herokuapp.com/accueil";
+        window.location = "https://pexipack-website.herokuapp.com/";
     })
 };
 
