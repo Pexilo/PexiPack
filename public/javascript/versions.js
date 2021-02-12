@@ -14,7 +14,7 @@ function optifine() {
         // OPEN NEW TAB 
         window.open('https://optifine.net/downloads', '_blank');
         // THEN REDIRECT THIS PAGE 
-        window.location = "http://127.0.0.1:3000";
+        window.location = "https://pexipack-website.herokuapp.com/download";
     })
 };
 
