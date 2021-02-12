@@ -1,30 +1,25 @@
 const express = require('express') // Appel de la dépendance
 const app = express() // Initialisation de l'application
 
-const port = process.env.PORT || 3000 // Choix du port
-const path = require('path');
+const port = process.env.PORT || 8080 // Choix du port
 
-const bodyParser = require("body-parser");
 
-app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(__dirname))
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/accueil.html'))
-    app.use(express.static(__dirname + '/public'))
+    res.render("accueil");
 });
 
 app.get('/Download', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/download.html'))
-    app.use(express.static(__dirname + '/public'))
+    res.render("download");
 });
 
 app.get('/Informations', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/information.html'))
-    app.use(express.static(__dirname + '/public'))
+    res.render("information");
 });
 
-app.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`)
+
+app.listen(port, function() {
+    console.log(`app running`)
 });
