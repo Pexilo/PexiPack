@@ -3,27 +3,29 @@ const app = express() // Initialisation de l'application
 
 var port = process.env.PORT || 8080 // Choix du port
 const path = require('path');
-
 const bodyParser = require("body-parser");
 
-app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(__dirname + '/public'));
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/accueil.html'))
-    app.use(express.static(__dirname + '/public'))
+app.get('*', function(req, res, next) {
+
+    switch (req.url) {
+
+        case '/':
+            res.sendFile(path.join(__dirname + '/public/html/accueil.html'));
+            break;
+        case '/MesFiches':
+            res.sendFile(path.join(__dirname + '/public/html/download.html'));
+            break;
+        default:
+            res.sendFile(path.join(__dirname + '/public/html/information.html'));
+            break;
+    }
+
 });
 
-app.get('/Download', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/download.html'))
-    app.use(express.static(__dirname + '/public'))
-});
-
-app.get('/Informations', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/information.html'))
-    app.use(express.static(__dirname + '/public'))
-});
 
 app.listen(port, function() {
-    console.log(`app running`)
+    console.log(`app running on ${port}`)
 });

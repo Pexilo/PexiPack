@@ -10,6 +10,43 @@ body {
     src: url("../fonts/Minecraftia-Regular.ttf");
 }
 
+p {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    position: relative;
+    top: 6px;
+    font-family: 'Minecraftia-Regular', sans-serif;
+    text-decoration: none;
+    line-height: 1.5em;
+    word-spacing: 0.3em;
+    color: aliceblue;
+}
+
+.textBox {
+    width: 500px;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.textBottom {
+    width: 900px;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.containerBox {
+    display: flex;
+    width: 900px;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 header img {
     width: 100%;
     height: auto;
@@ -18,7 +55,7 @@ header img {
 
 #wrap {
     position: fixed;
-    top: 400px;
+    top: 40%;
     font-family: sans-serif;
     font-size: 21px;
     line-height: 1.6;
@@ -94,34 +131,17 @@ header img {
     width: 100px;
 }
 
-#centerText {
+#text {
     width: 1000px;
     height: auto;
-    position: relative;
-    left: 450px;
     margin-bottom: 50px;
 }
 
 #pexipacklogo {
-    transform: translate(39%, -50%);
+    display: block;
+    margin-bottom: 100px;
     filter: drop-shadow(0 0 0.75rem black);
     cursor: pointer;
-}
-
-p {
-    text-align: center;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4em;
-    position: relative;
-    top: 6px;
-    font-family: 'Minecraftia-Regular', sans-serif;
-    text-decoration: none;
-    line-height: 1.5em;
-    word-spacing: 0.3em;
-    color: aliceblue;
 }
 
 .containerSlideshow1 {
@@ -182,28 +202,16 @@ p {
     }
 }
 
-#couleur {
-    width: 500px;
-    height: auto;
-    position: relative;
-    left: 500px;
-    width: 500px;
-    margin-top: 250px;
-}
-
 #greenContainer {
     width: 300px;
     height: 400px;
     background-image: url(../img/stone.png);
-    position: relative;
-    left: 1100px;
-    bottom: 350px;
     border-radius: 0.3em;
-    margin-top: 50px;
 }
 
 #greenContainer div {
-    transform: translate(25%, 30%);
+    position: relative;
+    top: 50px;
     width: 200px;
     height: 200px;
     background-color: #21DD6F;
@@ -220,10 +228,8 @@ p {
 .containerSlideshow2 {
     width: 300px;
     height: 400px;
-    bottom: 500px;
     overflow: hidden;
     position: relative;
-    left: 500px;
     background-image: url(../img/oakwood.png);
     border-radius: 0.3em;
 }
@@ -277,21 +283,11 @@ p {
     }
 }
 
-#weapon {
-    position: relative;
-    width: 500px;
-    height: auto;
-    left: 900px;
-    bottom: 200px;
-}
-
 .containerSlideshow3 {
     width: 300px;
     height: 400px;
-    bottom: 650px;
     overflow: hidden;
     position: relative;
-    left: 1100px;
     background-image: url(../img/oakwood.png);
     border-radius: 0.3em;
 }
@@ -324,19 +320,10 @@ p {
     animation-name: anim_slide2;
 }
 
-#mob {
-    position: relative;
-    width: 500px;
-    height: auto;
-    left: 500px;
-    bottom: 350px;
-}
-
 .containerSlideshow4 {
-    margin-top: 40px;
+    margin-bottom: 50px;
     width: 1000px;
     height: 400px;
-    bottom: 550px;
     overflow: hidden;
     position: relative;
     background-image: url(../img/oakwood.png);
@@ -371,18 +358,13 @@ p {
     animation-name: anim_slide1;
 }
 
-#container {
-    position: relative;
-    width: 1000px;
-    height: auto;
-    left: 450px;
-    bottom: 500px;
+#divButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #buttonDL {
-    position: relative;
-    left: 700px;
-    bottom: 500px;
     width: 500px;
     height: 50px;
     cursor: pointer;
@@ -392,6 +374,8 @@ p {
     border: none;
     background-image: url(../img/oak.png);
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.637));
+    margin-bottom: 50px;
+    margin-top: 100px;
 }
 
 #buttonDL:hover {
@@ -409,9 +393,6 @@ p {
 }
 
 #buttonVersions {
-    position: relative;
-    left: 250px;
-    bottom: 400px;
     width: 400px;
     height: 50px;
     cursor: pointer;
@@ -421,6 +402,7 @@ p {
     border: none;
     background-image: url(../img/spruce.png);
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.637));
+    margin-bottom: 100px;
 }
 
 #buttonVersions:hover {
@@ -439,31 +421,31 @@ p {
 }
 
 footer {
-    position: relative;
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
     width: 100%;
-    height: 300px;
+    height: 250px;
     background-image: url(../img/stone.png);
 }
 
-#PexiHead {
-    width: 100px;
-    height: auto;
-    position: relative;
-    top: 60px;
-    left: 580px;
-}
-
 footer p {
-    position: relative;
-    left: 600px;
     width: 750px;
+    font-size: 1.2em;
 }
 
-footer img {
-    width: 100px;
+#pexiHead {
+    width: 80px;
     height: auto;
-    left: 900px;
-    top: 30px;
     position: relative;
+    left: 100px;
+}
+
+#twitter {
+    width: 50px;
+    height: auto;
+    position: relative;
+    right: 400px;
+    top: 80px;
 }
