@@ -24,10 +24,11 @@ app.get('/Informations', (req, res) => {
     app.use(express.static(__dirname + '/public'))
 });
 
-app.listen(port, function() {
-    console.log(`app running`)
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname + '/public/html/404.html'))
+    app.use(express.static(__dirname + '/public'))
 });
 
-app.use(function(req, res) {
-    res.status(404).sendFile(path.join(__dirname + '/public/html/404.html'))
+app.listen(port, function() {
+    console.log(`app running`)
 });
