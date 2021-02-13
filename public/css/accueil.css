@@ -67,6 +67,11 @@ header img {
     z-index: 97;
 }
 
+#menuLogo {
+    width: 30px;
+    height: auto;
+}
+
 #wrap:not(:target) {
     transform: translate3d(-175px, 0, 0);
 }
@@ -81,7 +86,7 @@ header img {
     display: block;
     position: relative;
     left: 120px;
-    bottom: 10px;
+    bottom: 12px;
 }
 
 #open {

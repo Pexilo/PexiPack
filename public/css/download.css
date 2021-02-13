@@ -34,7 +34,7 @@ header img {
 
 #wrap {
     position: fixed;
-    top: 400px;
+    top: 40%;
     font-family: sans-serif;
     font-size: 21px;
     line-height: 1.6;
@@ -44,6 +44,11 @@ header img {
     transition: transform .4s cubic-bezier(.25, .1, .25, 1);
     filter: drop-shadow(0 0 0.75rem black);
     z-index: 97;
+}
+
+#menuLogo {
+    width: 30px;
+    height: auto;
 }
 
 #wrap:not(:target) {
@@ -60,7 +65,7 @@ header img {
     display: block;
     position: relative;
     left: 120px;
-    bottom: 10px;
+    bottom: 12px;
 }
 
 #open {
@@ -110,25 +115,17 @@ header img {
     width: 100px;
 }
 
-#pexipacklogo {
-    transform: translate(39%, -50%);
-    filter: drop-shadow(0 0 0.75rem black);
-}
-
-#intro {
+#text {
     width: 1000px;
     height: auto;
-    position: relative;
-    left: 460px;
     margin-bottom: 50px;
 }
 
-#note {
-    width: 1000px;
-    height: auto;
-    position: relative;
-    left: 460px;
+#pexipacklogo {
+    display: block;
     margin-bottom: 100px;
+    filter: drop-shadow(0 0 0.75rem black);
+    cursor: pointer;
 }
 
 #titleContainer {
@@ -136,8 +133,10 @@ header img {
     width: 1000px;
     height: 1460px;
     position: absolute;
-    left: 455px;
     display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 49.1%);
 }
 
 #version {
@@ -174,9 +173,11 @@ header img {
     width: 1000px;
     height: auto;
     position: absolute;
-    left: 455px;
     display: flex;
     flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 49%);
 }
 
 .line {
@@ -298,31 +299,33 @@ header img {
 }
 
 footer {
-    position: relative;
-    top: 1700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
     width: 100%;
-    height: 300px;
+    height: 250px;
     background-image: url(../img/stone.png);
-}
-
-#PexiHead {
-    width: 100px;
-    height: auto;
     position: relative;
-    top: 60px;
-    left: 580px;
+    top: 1550px;
 }
 
 footer p {
-    position: relative;
-    left: 600px;
     width: 750px;
+    font-size: 1.2em;
 }
 
-footer img {
-    width: 100px;
+#pexiHead {
+    width: 80px;
     height: auto;
-    left: 900px;
-    top: 30px;
     position: relative;
+    left: 100px;
+}
+
+#twitter {
+    width: 50px;
+    height: auto;
+    position: relative;
+    right: 400px;
+    top: 80px;
 }
