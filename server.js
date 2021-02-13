@@ -25,8 +25,9 @@ app.get('/Informations', (req, res) => {
     app.use(express.static(__dirname + '/public'))
 });
 
-app.use(function(req, res) {
-    res.status(404).render('404.html');
+app.get('public/*', function(req, res) {
+    res.sendfile(path.join(__dirname + '/public/html/404.html' + req.url));
+    app.use(express.static(__dirname + '/public'))
 });
 
 app.listen(port, function() {
