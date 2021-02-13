@@ -25,6 +25,10 @@ app.get('/Informations', (req, res) => {
     app.use(express.static(__dirname + '/public'))
 });
 
+app.use(function(req, res) {
+    res.status(404).render('404.html');
+});
+
 app.listen(port, function() {
     console.log(`app running`)
 });
