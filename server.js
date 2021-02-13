@@ -24,11 +24,6 @@ app.get('/Informations', (req, res) => {
     app.use(express.static(__dirname + '/public'))
 });
 
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/404.html'))
-    app.use(express.static(__dirname + '/public'))
-});
-
 app.listen(port, function() {
     console.log(`app running`)
 });
