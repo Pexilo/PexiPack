@@ -15,11 +15,14 @@ app.get('*', function(req, res, next) {
         case '/':
             res.sendFile(path.join(__dirname + '/public/html/accueil.html'));
             break;
-        case '/MesFiches':
+        case '/Download':
             res.sendFile(path.join(__dirname + '/public/html/download.html'));
             break;
-        default:
+        case '/Informations':
             res.sendFile(path.join(__dirname + '/public/html/information.html'));
+            break;
+        default:
+            res.sendFile(path.join(__dirname + '/public/html/accueil.html'));
             break;
     }
 
