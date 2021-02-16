@@ -222,4 +222,5 @@ footer p {
     position: relative;
     right: 400px;
     top: 80px;
+    cursor: pointer;
 }
