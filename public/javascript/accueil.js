@@ -52,6 +52,10 @@ function accueilResponsive() {
 
     textTop.style.width = `${w - 50}px`;
 
+    document.getElementById("imgTop1").src = "../img/fond4Res.png";
+    document.getElementById("imgTop2").src = "../img/fond5Res.png";
+    document.getElementById("imgTop3").src = "../img/texturesRes.png";
+
     document.getElementById("imgBottom1").src = "../img/container1Res.png";
     document.getElementById("imgBottom2").src = "../img/container2Res.png";
     document.getElementById("imgBottom3").src = "../img/container3Res.png";
@@ -124,9 +128,6 @@ function accueilResponsive() {
     twitterLogo.style.visibility = "hidden";
 
     containerSlideBig1.style.height = "250px";
-    document.getElementById("imgTop1").src = "../img/fond4Res.png";
-    document.getElementById("imgTop2").src = "../img/fond5Res.png";
-    document.getElementById("imgTop3").src = "../img/texturesRes.png";
     slid1.style.width = `${w}px`;
     slid2.style.width = `${w}px`;
     slid3.style.width = `${w}px`;
@@ -138,9 +139,6 @@ function accueilResponsive() {
     containerSlide1.style.animationName = "anim_slideRes";
 
     containerSlideBig2.style.height = "250px";
-    document.getElementById("imgBottom1").src = "../img/container1Res.png";
-    document.getElementById("imgBottom2").src = "../img/container2Res.png";
-    document.getElementById("imgBottom3").src = "../img/container3Res.png";
     slid10.style.width = `${w}px`;
     slid11.style.width = `${w}px`;
     slid12.style.width = `${w}px`;
