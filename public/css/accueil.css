@@ -391,6 +391,10 @@ p {
   align-items: center;
 }
 
+#divButton p {
+  font-size: 140%;
+}
+
 #buttonDL {
   width: 500px;
   height: 50px;

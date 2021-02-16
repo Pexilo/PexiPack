@@ -18,6 +18,7 @@ let pexiHead = document.getElementById("pexiHead");
 let textFooter = document.getElementById("textFooter");
 let twitterLogo = document.getElementById("twitter");
 let footer = document.getElementById("footer");
+let buttonDLs = document.getElementsByClassName("buttonDLs");
 
 let slid1 = document.getElementById("slid1");
 let slid2 = document.getElementById("slid2");
@@ -37,7 +38,6 @@ setTimeout(function () {
 
 function accueilResponsive() {
   let w = document.documentElement.clientWidth;
-  let h = document.documentElement.clientHeight;
 
   if (w <= 1100) {
     fondHaut.style.width = `${w}px`;
@@ -109,12 +109,16 @@ function accueilResponsive() {
     buttonVersions.style.width = `${w - 50}px`;
     textBottom[1].style.top = "270px";
 
+    for (let m = 0; m < buttonDLs.length; m++) {
+      buttonDLs[m].style.fontSize = "100%";
+    }
+
     footer.style.width = `${w}px`;
     footer.style.height = "150px";
     footer.style.position = "relative";
     footer.style.top = "50px";
     footer.style.borderBottom = "30px solid transparent";
-    pexiHead.style.width = `${w - 300}px`;
+    pexiHead.style.width = "50px";
     pexiHead.style.left = "-10px";
     pexiHead.style.marginLeft = "50px";
     textFooter.style.fontSize = "70%";
@@ -153,6 +157,5 @@ function accueilResponsive() {
 }
 
 window.addEventListener("resize", () => {
-  /* Produit des actions lorqu'on redimensionne la page */
   accueilResponsive();
 });
