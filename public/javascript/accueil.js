@@ -40,6 +40,8 @@ function accueilResponsive() {
   let h = document.documentElement.clientHeight;
 
   if (w <= 1100) {
+    fondHaut.style.width = `${w}px`;
+
     pexipackLogo.style.width = `${w - 10}px`;
     pexipackLogo.style.marginTop = `${w - 700}px`;
     pexipackLogo.style.marginBottom = "30px";
