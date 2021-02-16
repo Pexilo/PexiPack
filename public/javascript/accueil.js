@@ -47,10 +47,8 @@ function accueilResponsive() {
     pexipackLogo.style.marginBottom = "30px";
 
     containerSlideBig1.style.width = `${w - 10}px`;
-    containerSlideBig1.style.height = `${h - 500}px`;
 
     containerSlideBig2.style.width = `${w - 10}px`;
-    containerSlideBig2.style.height = `${h - 500}px`;
 
     textTop.style.width = `${w - 50}px`;
   }
