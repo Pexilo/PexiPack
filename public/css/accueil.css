@@ -25,6 +25,12 @@ p {
   color: aliceblue;
 }
 
+#textTop {
+  width: 900px;
+  height: auto;
+  margin-bottom: 100px;
+}
+
 .textBox {
   width: 500px;
   height: auto;
@@ -171,27 +177,27 @@ p {
   border-radius: 0.3em;
 }
 
-.slid1,
-.slid2,
-.slid3 {
+#slid1,
+#slid2,
+#slid3 {
   position: absolute;
   width: 1000px;
   height: 400px;
 }
 
-.slid1 {
+#slid1 {
   left: 0;
 }
 
-.slid2 {
+#slid2 {
   left: 1000px;
 }
 
-.slid3 {
+#slid3 {
   left: 2000px;
 }
 
-.containerSlide1 {
+#containerSlide1 {
   position: absolute;
   left: 0px;
   animation-duration: 17s;
@@ -255,27 +261,27 @@ p {
   border-radius: 0.3em;
 }
 
-.slid4,
-.slid5,
-.slid6 {
+#slid4,
+#slid5,
+#slid6 {
   position: absolute;
   width: 300px;
   height: 400px;
 }
 
-.slid4 {
+#slid4 {
   left: 0;
 }
 
-.slid5 {
+#slid5 {
   left: 300px;
 }
 
-.slid6 {
+#slid6 {
   left: 600px;
 }
 
-.containerSlide2 {
+#containerSlide2 {
   left: 0px;
   position: absolute;
   animation-duration: 10s;
@@ -313,27 +319,27 @@ p {
   border-radius: 0.3em;
 }
 
-.slid7,
-.slid8,
-.slid9 {
+#slid7,
+#slid8,
+#slid9 {
   position: absolute;
   width: 300px;
   height: 400px;
 }
 
-.slid7 {
+#slid7 {
   left: 0;
 }
 
-.slid8 {
+#slid8 {
   left: 300px;
 }
 
-.slid9 {
+#slid9 {
   left: 600px;
 }
 
-.containerSlide3 {
+#containerSlide3 {
   left: 0px;
   position: absolute;
   animation-duration: 12s;
@@ -349,27 +355,27 @@ p {
   border-radius: 0.3em;
 }
 
-.slid10,
-.slid11,
-.slid12 {
+#slid10,
+#slid11,
+#slid12 {
   position: absolute;
   width: 1000px;
   height: 400px;
 }
 
-.slid10 {
+#slid10 {
   left: 0;
 }
 
-.slid11 {
+#slid11 {
   left: 1000px;
 }
 
-.slid12 {
+#slid12 {
   left: 2000px;
 }
 
-.containerSlide4 {
+#containerSlide4 {
   position: absolute;
   left: 0px;
   animation-duration: 15s;
@@ -468,4 +474,25 @@ footer p {
   right: 400px;
   top: 80px;
   cursor: pointer;
+}
+
+@keyframes anim_slideRes {
+  0% {
+    left: 0px;
+  }
+  22% {
+    left: 0px;
+  }
+  33% {
+    left: -400px;
+  }
+  45% {
+    left: -400px;
+  }
+  66% {
+    left: -800px;
+  }
+  90% {
+    left: -800px;
+  }
 }

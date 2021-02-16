@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PexiPack</title>
 
-    <link
-      rel="shortcut icon"
-      href="https://imgur.com/a/W5wWIvS.png"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="./img/pack.png" type="image/png" />
 
     <link rel="stylesheet" href="../css/accueil.css" />
     <script src="../javascript/accueil.js" async></script>
@@ -54,7 +50,7 @@
         <a onclick="play(); optifine()">
           <img src="../img/pexipacklogo.png" alt="PexiPack" id="pexipacklogo" />
         </a>
-        <div id="text">
+        <div id="textTop">
           <p>
             Le pack de texture "Pexipack" a été créé le 1er Septembre 2016 par
             Pexilo, un pack "Faithful" permettant de conserver une expérience
@@ -65,10 +61,10 @@
         </div>
 
         <div class="containerSlideshow1" id="containerSlideBig1">
-          <div class="containerSlide1">
-            <div class="slid1"><img src="../img/fond4.png" /></div>
-            <div class="slid2"><img src="../img/fond5.png" /></div>
-            <div class="slid3"><img src="../img/textures.png" /></div>
+          <div id="containerSlide1">
+            <div id="slid1"><img id="imgTop1" src="../img/fond4.png" /></div>
+            <div id="slid2"><img id="imgTop2" src="../img/fond5.png" /></div>
+            <div id="slid3"><img id="imgTop3" src="../img/textures.png" /></div>
           </div>
         </div>
 
@@ -86,10 +82,10 @@
 
         <div class="containerBox">
           <div class="containerSlideshow2">
-            <div class="containerSlide2">
-              <div class="slid4"><img src="../img/weapon1.png" /></div>
-              <div class="slid5"><img src="../img/weapon2.png" /></div>
-              <div class="slid6"><img src="../img/weapon3.png" /></div>
+            <div id="containerSlide2">
+              <div id="slid4"><img src="../img/weapon1.png" /></div>
+              <div id="slid5"><img src="../img/weapon2.png" /></div>
+              <div id="slid6"><img src="../img/weapon3.png" /></div>
             </div>
           </div>
 
@@ -109,19 +105,25 @@
           </p>
 
           <div class="containerSlideshow3">
-            <div class="containerSlide3">
-              <div class="slid7"><img src="../img/creeper.png" /></div>
-              <div class="slid8"><img src="../img/zombie.png" /></div>
-              <div class="slid9"><img src="../img/magicien.png" /></div>
+            <div id="containerSlide3">
+              <div id="slid7"><img src="../img/creeper.png" /></div>
+              <div id="slid8"><img src="../img/zombie.png" /></div>
+              <div id="slid9"><img src="../img/magicien.png" /></div>
             </div>
           </div>
         </div>
 
         <div class="containerSlideshow4" id="containerSlideBig2">
-          <div class="containerSlide4">
-            <div class="slid10"><img src="../img/container1.png" /></div>
-            <div class="slid11"><img src="../img/container2.png" /></div>
-            <div class="slid12"><img src="../img/container3.png" /></div>
+          <div id="containerSlide4">
+            <div id="slid10">
+              <img id="imgBottom1" src="../img/container1.png" />
+            </div>
+            <div id="slid11">
+              <img id="imgBottom2" src="../img/container2.png" />
+            </div>
+            <div id="slid12">
+              <img id="imgBottom3" src="../img/container3.png" />
+            </div>
           </div>
         </div>
 
@@ -155,7 +157,7 @@
     </div>
   </body>
 
-  <footer>
+  <footer id="footer">
     <img
       src="../img/pack.png"
       alt="Pexilo"
