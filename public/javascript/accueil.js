@@ -41,8 +41,9 @@ function accueilResponsive() {
 
   if (w <= 1100) {
     fondHaut.style.width = `${w}px`;
-    document.getElementById("textChanges").style.fontSize = "80%";
+
     document.getElementById("pexipacklogo").src = "../img/pexipacklogores.png";
+    pexipackLogo.style.paddingBottom = "100px";
 
     pexipackLogo.style.width = `${w - 10}px`;
     pexipackLogo.style.marginTop = `${w - 700}px`;
@@ -73,7 +74,7 @@ function accueilResponsive() {
       textBox[y].style.width = `${w - 50}px`;
       textBox[y].style.maxWidth = `${w}px`;
     }
-
+    document.getElementById("textChanges").style.fontSize = "80%";
     pexipackLogo.style.top = "350px";
     pexipackLogo.style.paddingBottom = "400px";
     textTop.style.marginBottom = "50px";
