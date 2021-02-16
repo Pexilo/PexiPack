@@ -158,4 +158,6 @@ function accueilResponsive() {
 
 window.addEventListener("resize", () => {
   accueilResponsive();
+  let w = document.documentElement.clientWidth;
+  fondHaut.style.width = `${w}px`;
 });
