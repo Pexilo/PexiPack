@@ -51,6 +51,10 @@ function accueilResponsive() {
     containerSlideBig2.style.height = `${h - 500}px`;
 
     textTop.style.width = `${w - 50}px`;
+
+    document.getElementById("imgBottom1").src = "../img/container1Res.png";
+    document.getElementById("imgBottom2").src = "../img/container2Res.png";
+    document.getElementById("imgBottom3").src = "../img/container3Res.png";
   }
   if (w <= 640) {
     fondHaut.style.width = `${w}px`;
