@@ -182,7 +182,7 @@ p {
 #slid3 {
   position: absolute;
   width: 1000px;
-  height: 400px;
+  height: auto;
 }
 
 #slid1 {
@@ -349,6 +349,7 @@ p {
 
 .containerSlideshow4 {
   margin-bottom: 50px;
+
   overflow: hidden;
   position: relative;
   background-image: url(../img/oakwood.png);
@@ -378,6 +379,7 @@ p {
 #containerSlide4 {
   position: absolute;
   left: 0px;
+  height: auto;
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-name: anim_slide1;
