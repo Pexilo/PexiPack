@@ -361,7 +361,7 @@ p {
 #slid12 {
   position: absolute;
   width: 1000px;
-  height: 400px;
+  height: auto;
 }
 
 #slid10 {
