@@ -53,9 +53,9 @@ function downloadResponsive() {
     titleContainer.removeChild(date);
     titleContainer.removeChild(size);
 
-    titleContainer.style.top = "35%";
+    titleContainer.style.top = "30%";
 
-    tabContainter.style.top = "35%";
+    tabContainter.style.top = "30%";
 
     for (let m = 0; m < pDate.length; m++) {
       pDate[m].style.visibility = "hidden";
