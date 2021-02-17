@@ -33,7 +33,7 @@ function downloadResponsive() {
     pexipackLogo.style.top = "100px";
 
     pexipackLogo.style.width = `${w - 10}px`;
-    pexipackLogo.style.marginBottom = "100px";
+    pexipackLogo.style.paddingBottom = "100px";
 
     tabContainter.style.width = `${w - 50}px`;
     titleContainer.style.width = `${w - 50}px`;
@@ -45,8 +45,6 @@ function downloadResponsive() {
   }
   if (w <= 640) {
     wrap.style.visibility = "hidden";
-
-    pexipackLogo.style.paddingBottom = "100px";
 
     for (let n = 0; n < textTop.length; n++) {
       textTop[n].style.fontSize = "80%";

@@ -46,6 +46,7 @@ function accueilResponsive() {
 
     pexipackLogo.style.width = `${w - 10}px`;
     pexipackLogo.style.marginBottom = "30px";
+    pexipackLogo.style.paddingBottom = "100px";
 
     containerSlideBig1.style.width = `${w - 10}px`;
 
