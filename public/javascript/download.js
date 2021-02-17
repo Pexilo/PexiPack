@@ -42,6 +42,10 @@ function downloadResponsive() {
       textTop[y].style.width = `${w - 50}px`;
       textTop[y].style.maxWidth = `${w}px`;
     }
+
+    for (let k = 0; k < tooltip.length; k++) {
+      tooltip[k].style.visibility = "hidden";
+    }
   }
   if (w <= 640) {
     wrap.style.visibility = "hidden";
@@ -75,10 +79,6 @@ function downloadResponsive() {
 
     download.style.width = "50%";
     download.style.fontSize = "90%";
-
-    for (let k = 0; k < tooltip.length; k++) {
-      tooltip[k].style.visibility = "hidden";
-    }
 
     footer.style.width = `${w}px`;
     footer.style.height = "150px";
