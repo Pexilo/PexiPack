@@ -34,23 +34,30 @@ function downloadResponsive() {
 
     pexipackLogo.style.width = `${w - 10}px`;
     pexipackLogo.style.marginBottom = "30px";
+
+    tabContainter.style.width = `${w - 50}px`;
+    titleContainer.style.width = `${w - 50}px`;
+
+    for (let y = 0; y < textTop.length; y++) {
+      textTop[y].style.width = `${w - 50}px`;
+      textTop[y].style.maxWidth = `${w}px`;
+      textTop[y].style.margintop = "100px";
+    }
   }
   if (w <= 640) {
     wrap.style.visibility = "hidden";
 
     pexipackLogo.style.paddingBottom = "100px";
 
-    for (let y = 0; y < textTop.length; y++) {
-      textTop[y].style.width = `${w - 50}px`;
-      textTop[y].style.maxWidth = `${w}px`;
-      textTop[y].style.fontSize = "80%";
+    for (let n = 0; n < textTop.length; n++) {
+      textTop[n].style.fontSize = "80%";
     }
 
     titleContainer.removeChild(date);
     titleContainer.removeChild(size);
-    titleContainer.style.width = `${w - 50}px`;
+
     titleContainer.style.top = "25%";
-    tabContainter.style.width = `${w - 50}px`;
+
     tabContainter.style.top = "25%";
 
     for (let m = 0; m < pDate.length; m++) {

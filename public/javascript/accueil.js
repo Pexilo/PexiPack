@@ -5,7 +5,6 @@ let containerSlideBig1 = document.getElementById("containerSlideBig1");
 let containerSlideBig2 = document.getElementById("containerSlideBig2");
 let wrap = document.getElementById("wrap");
 let containerBox = document.getElementsByClassName("containerBox");
-let greenContainer = document.getElementById("greenContainer");
 let textGreenContainer = document.getElementById("textGreenContainer");
 let textWeaponsContainer = document.getElementById("textWeaponsContainer");
 let textMobsContainer = document.getElementById("textMobsContainer");
@@ -75,6 +74,7 @@ function accueilResponsive() {
 
     document.getElementById("textChanges").style.fontSize = "80%";
     pexipackLogo.style.paddingBottom = "100px";
+    textTop.style.margintop = "100px";
     textTop.style.marginBottom = "50px";
     textTop.style.width = `${w - 50}px`;
 
