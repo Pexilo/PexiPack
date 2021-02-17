@@ -47,7 +47,9 @@ function downloadResponsive() {
       tooltip[k].style.visibility = "hidden";
     }
 
-    pSize.style.fontSize = "90%";
+    for (let u = 0; u < pSize.length; u++) {
+      pSize[u].style.fontSize = "0.9em";
+    }
   }
   if (w <= 640) {
     wrap.style.visibility = "hidden";
