@@ -1,9 +1,9 @@
 let pexipackLogo = document.getElementById("pexipacklogo");
+let fondHaut = document.getElementById("fondHaut");
 let textTop = document.getElementById("textTop");
 let containerSlideBig1 = document.getElementById("containerSlideBig1");
 let containerSlideBig2 = document.getElementById("containerSlideBig2");
 let wrap = document.getElementById("wrap");
-let fondHaut = document.getElementById("fondHaut");
 let containerBox = document.getElementsByClassName("containerBox");
 let greenContainer = document.getElementById("greenContainer");
 let textGreenContainer = document.getElementById("textGreenContainer");
@@ -43,10 +43,9 @@ function accueilResponsive() {
     fondHaut.style.width = `${w}px`;
 
     document.getElementById("pexipacklogo").src = "../img/pexipacklogores.png";
-    pexipackLogo.style.paddingBottom = "100px";
+    pexipackLogo.style.top = "100px";
 
     pexipackLogo.style.width = `${w - 10}px`;
-    pexipackLogo.style.marginTop = `${w - 700}px`;
     pexipackLogo.style.marginBottom = "30px";
 
     containerSlideBig1.style.width = `${w - 10}px`;
@@ -56,7 +55,6 @@ function accueilResponsive() {
     textTop.style.width = `${w - 50}px`;
   }
   if (w <= 640) {
-    fondHaut.style.width = `${w}px`;
     wrap.style.visibility = "hidden";
 
     for (let i = 0; i < containerBox.length; i++) {
@@ -74,15 +72,14 @@ function accueilResponsive() {
       textBox[y].style.width = `${w - 50}px`;
       textBox[y].style.maxWidth = `${w}px`;
     }
+
     document.getElementById("textChanges").style.fontSize = "80%";
-    pexipackLogo.style.top = "350px";
-    pexipackLogo.style.paddingBottom = "400px";
+    pexipackLogo.style.paddingBottom = "100px";
     textTop.style.marginBottom = "50px";
     textTop.style.width = `${w - 50}px`;
 
-    textGreenContainer.style.top = "535px";
+    textGreenContainer.style.top = "520px";
     textGreenContainer.style.marginLeft = "30px";
-    greenContainer.style.marginBottom = "200px";
 
     containerBox[1].style.top = "200px";
     textWeaponsContainer.style.top = "40px";
@@ -97,6 +94,7 @@ function accueilResponsive() {
       textBottom[k].style.maxWidth = `${w}px`;
       textBottom[k].style.width = `${w - 50}px`;
     }
+
     containerSlideBig2.style.top = "450px";
     textBottom[0].style.top = "450px";
 
@@ -124,10 +122,11 @@ function accueilResponsive() {
     textFooter.style.fontSize = "70%";
     twitterLogo.style.visibility = "hidden";
 
+    containerSlideBig1.style.width = "400px";
     containerSlideBig1.style.height = "250px";
-    slid1.style.width = `${w}px`;
-    slid2.style.width = `${w}px`;
-    slid3.style.width = `${w}px`;
+    slid1.style.width = "400px";
+    slid2.style.width = "400px";
+    slid3.style.width = "400px";
     slid1.style.height = "250px";
     slid2.style.height = "250px";
     slid3.style.height = "250px";
@@ -135,10 +134,11 @@ function accueilResponsive() {
     slid3.style.left = "800px";
     containerSlide1.style.animationName = "anim_slideRes";
 
+    containerSlideBig2.style.width = "400px";
     containerSlideBig2.style.height = "250px";
-    slid10.style.width = `${w}px`;
-    slid11.style.width = `${w}px`;
-    slid12.style.width = `${w}px`;
+    slid10.style.width = "400px";
+    slid11.style.width = "400px";
+    slid12.style.width = "400px";
     slid10.style.height = "250px";
     slid11.style.height = "250px";
     slid12.style.height = "250px";

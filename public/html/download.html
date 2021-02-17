@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../css/download.css" />
     <script src="../javascript/versions.js" async></script>
+    <script src="../javascript/download.js" async></script>
     <audio
       id="audio"
       src="https://www.mboxdrive.com/minecraftclick.mp3"
@@ -15,7 +16,7 @@
   </head>
 
   <header>
-    <img src="../img/fondhaut.png" alt="header" />
+    <img src="../img/fondhaut.png" id="fondHaut" alt="header" />
   </header>
 
   <main>
@@ -47,13 +48,13 @@
       <a href="/">
         <img src="../img/pexipacklogo.png" alt="PexiPack" id="pexipacklogo" />
       </a>
-      <p id="text">
+      <p class="textTop">
         Cette page répertorie toutes les versions du PexiPack, je vous conseille
         d'utiliser la dernière mise à jour du pack selon la version de jeu
         souhaité, à noter que la qualité du PexiPack est dégressif, suivant la
         version les textures peuvent changer.
       </p>
-      <p id="text">
+      <p class="textTop">
         Pensez à régler les paramètres graphiques sur "Fancy"/"Détaillé" pour
         que le pack de texture fonctionne correctement. L'utilisation d'optifine
         est recommandé.
@@ -430,16 +431,16 @@
     </div>
   </body>
 
-  <footer>
+  <footer id="footer">
     <img
       src="../img/pack.png"
       alt="Pexilo"
       id="pexiHead"
       title="hé c'est moi"
     />
-    <p>PexiPack © Pexilo All rights reserved.</p>
-    <a onclick="twitterDownload()"
-      ><img src="../img/twitter.png" id="twitter" alt=""
+    <p id="textFooter">PexiPack © Pexilo All rights reserved.</p>
+    <a onclick="twitterAccueil()"
+      ><img src="../img/twitter.png" id="twitter" alt="twitter"
     /></a>
   </footer>
 </html>

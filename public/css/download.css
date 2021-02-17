@@ -1,332 +1,335 @@
 body {
-    margin: 0;
-    width: 100%;
-    height: auto;
-    background: linear-gradient(0.25turn, #573A25, #79553B, #573A25);
+  margin: 0;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(0.25turn, #573a25, #79553b, #573a25);
 }
 
 @font-face {
-    font-family: 'Minecraftia-Regular';
-    src: url("../fonts/Minecraftia-Regular.ttf");
+  font-family: "Minecraftia-Regular";
+  src: url("../fonts/Minecraftia-Regular.ttf");
 }
 
 p {
-    text-align: center;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4em;
-    position: relative;
-    top: 6px;
-    font-family: 'Minecraftia-Regular', sans-serif;
-    text-decoration: none;
-    line-height: 1.5em;
-    word-spacing: 0.3em;
-    color: aliceblue;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  position: relative;
+  top: 6px;
+  font-family: "Minecraftia-Regular", sans-serif;
+  text-decoration: none;
+  line-height: 1.5em;
+  word-spacing: 0.3em;
+  color: aliceblue;
 }
 
 header img {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(0 6mm 4mm rgba(0, 0, 0, 0.596));
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 6mm 4mm rgba(0, 0, 0, 0.596));
 }
 
 #wrap {
-    position: fixed;
-    top: 40%;
-    font-family: sans-serif;
-    font-size: 21px;
-    line-height: 1.6;
-    margin: 0;
-    display: flex;
-    color: #f00;
-    transition: transform .4s cubic-bezier(.25, .1, .25, 1);
-    filter: drop-shadow(0 0 0.75rem black);
-    z-index: 97;
+  position: fixed;
+  top: 40%;
+  font-family: sans-serif;
+  font-size: 21px;
+  line-height: 1.6;
+  margin: 0;
+  display: flex;
+  color: #f00;
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  filter: drop-shadow(0 0 0.75rem black);
+  z-index: 97;
 }
 
 #menuLogo {
-    width: 30px;
-    height: auto;
+  width: 30px;
+  height: auto;
 }
 
 #wrap:not(:target) {
-    transform: translate3d(-175px, 0, 0);
+  transform: translate3d(-175px, 0, 0);
 }
 
 #wrap:target {
-    transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 #close {
-    height: 44px;
-    text-align: right;
-    display: block;
-    position: relative;
-    left: 120px;
-    bottom: 12px;
+  height: 44px;
+  text-align: right;
+  display: block;
+  position: relative;
+  left: 120px;
+  bottom: 12px;
 }
 
 #open {
-    height: 44px;
-    text-align: right;
-    display: block;
-    margin-right: -77px;
+  height: 44px;
+  text-align: right;
+  display: block;
+  margin-right: -77px;
 }
 
 #wrap:target #open,
 #wrap:not(:target) #close {
-    display: none;
+  display: none;
 }
 
 #wrap:target #open {
-    display: none;
+  display: none;
 }
 
 .nav a {
-    color: white;
-    text-decoration: none;
-    display: block;
+  color: white;
+  text-decoration: none;
+  display: block;
 }
 
 .nav a img {
-    width: 90px;
-    height: 90px;
+  width: 90px;
+  height: 90px;
 }
 
 .links {
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-    filter: drop-shadow(0 0 0.75rem black);
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  filter: drop-shadow(0 0 0.75rem black);
 }
 
 .header {
-    background-image: url(../img/oakwood.png);
-    width: 200px;
-    padding: 0 20px;
-    display: inline-block;
-    vertical-align: top;
+  background-image: url(../img/oakwood.png);
+  width: 200px;
+  padding: 0 20px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .nav {
-    padding: 25px;
-    width: 100px;
+  padding: 25px;
+  width: 100px;
 }
 
-#text {
-    width: 1000px;
-    height: auto;
-    margin-bottom: 50px;
+.textTop {
+  width: 1000px;
+  height: auto;
+  margin-bottom: 50px;
 }
 
 #pexipacklogo {
-    display: block;
-    margin-bottom: 100px;
-    filter: drop-shadow(0 0 0.75rem black);
-    cursor: pointer;
+  display: block;
+  position: relative;
+  width: 1100px;
+  height: auto;
+  margin-bottom: 100px;
+  filter: drop-shadow(0 0 0.75rem black);
+  cursor: pointer;
 }
 
 #titleContainer {
-    z-index: 1;
-    width: 1000px;
-    height: 1460px;
-    position: absolute;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 49.1%);
+  z-index: 1;
+  width: 1000px;
+  height: 1460px;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 49.1%);
 }
 
 #version {
-    width: 20%;
-    height: 100%;
-    border-right: 3px solid #2E2A2A;
+  width: 20%;
+  height: 100%;
+  border-right: 3px solid #2e2a2a;
 }
 
 #name {
-    width: 30%;
-    height: 100%;
-    border-right: 3px solid #2E2A2A;
+  width: 30%;
+  height: 100%;
+  border-right: 3px solid #2e2a2a;
 }
 
 #size {
-    width: 10%;
-    height: 100%;
-    border-right: 3px solid #2E2A2A;
+  width: 10%;
+  height: 100%;
+  border-right: 3px solid #2e2a2a;
 }
 
 #date {
-    width: 20%;
-    height: 100%;
-    border-right: 3px solid #2E2A2A;
+  width: 20%;
+  height: 100%;
+  border-right: 3px solid #2e2a2a;
 }
 
 #download {
-    width: 20%;
-    height: 100%;
+  width: 20%;
+  height: 100%;
 }
 
 #tabContainer {
-    z-index: 0;
-    width: 1000px;
-    height: auto;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 49%);
+  z-index: 0;
+  width: 1000px;
+  height: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 49%);
 }
 
 .line {
-    width: 99.4%;
-    height: 70px;
-    z-index: 1;
-    background-image: url(../img/stonelarge.png);
-    border-right: 3px solid #2E2A2A;
-    border-left: 3px solid #2E2A2A;
-    border-top: 3px solid #2E2A2A;
-    display: flex;
+  width: 99.4%;
+  height: 70px;
+  z-index: 1;
+  background-image: url(../img/stonelarge.png);
+  border-right: 3px solid #2e2a2a;
+  border-left: 3px solid #2e2a2a;
+  border-top: 3px solid #2e2a2a;
+  display: flex;
 }
 
 #lineLast {
-    border-bottom: 3px solid #2E2A2A;
+  border-bottom: 3px solid #2e2a2a;
 }
 
 .pVersion {
-    width: 20%;
-    height: 70px;
+  width: 20%;
+  height: 70px;
 }
 
 .pName {
-    width: 30%;
-    height: 70px;
+  width: 30%;
+  height: 70px;
 }
 
 .pSize {
-    width: 10%;
-    height: 70px;
-    font-size: 1em;
+  width: 10%;
+  height: 70px;
+  font-size: 1em;
 }
 
 .pDate {
-    width: 20%;
-    height: 70px;
-    font-size: 1em;
+  width: 20%;
+  height: 70px;
+  font-size: 1em;
 }
 
 #download {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .buttonDownload {
-    font-size: 0.7em;
-    width: 150px;
-    height: 30px;
-    cursor: pointer;
-    outline: none;
-    border-radius: 0.3em;
-    box-shadow: 0 3px #704E35;
-    border: none;
-    background-image: url(../img/oak.png);
+  font-size: 0.7em;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.3em;
+  box-shadow: 0 3px #704e35;
+  border: none;
+  background-image: url(../img/oak.png);
 }
 
 .buttonDownload:hover {
-    background-image: url(../img/spruce.png);
+  background-image: url(../img/spruce.png);
 }
 
 .buttonDownload:active {
-    background-image: url(../img/spruce.png);
-    box-shadow: 0 2px#5E462A;
-    transform: translateY(2px);
+  background-image: url(../img/spruce.png);
+  box-shadow: 0 2px#5E462A;
+  transform: translateY(2px);
 }
 
 .tooltip {
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 }
 
 .tooltip:hover:after {
-    background-color: rgba(0, 0, 0, 0.76);
-    border-radius: 5px;
-    bottom: 32px;
-    color: #fff;
-    text-align: center;
-    font-family: 'Minecraftia-Regular', sans-serif;
-    line-height: 1.4em;
-    word-spacing: 0.3em;
-    content: attr(title);
-    left: 20%;
-    padding: 10px 15px 0 15px;
-    position: absolute;
-    z-index: 98;
-    width: 400px;
-    height: auto;
+  background-color: rgba(0, 0, 0, 0.76);
+  border-radius: 5px;
+  bottom: 32px;
+  color: #fff;
+  text-align: center;
+  font-family: "Minecraftia-Regular", sans-serif;
+  line-height: 1.4em;
+  word-spacing: 0.3em;
+  content: attr(title);
+  left: 20%;
+  padding: 10px 15px 0 15px;
+  position: absolute;
+  z-index: 98;
+  width: 400px;
+  height: auto;
 }
 
 .title {
-    width: 25px;
-    height: 25px;
-    padding-left: 250px;
-    padding-top: 44px;
+  width: 25px;
+  height: 25px;
+  padding-left: 250px;
+  padding-top: 44px;
 }
 
 .titlebis {
-    width: 25px;
-    height: 25px;
-    padding-left: 262px;
-    padding-top: 44px;
+  width: 25px;
+  height: 25px;
+  padding-left: 262px;
+  padding-top: 44px;
 }
 
 #title20 {
-    padding-left: 250px;
-    padding-top: 23px;
+  padding-left: 250px;
+  padding-top: 23px;
 }
 
 #title19 {
-    padding-left: 250px;
-    padding-top: 43px;
+  padding-left: 250px;
+  padding-top: 43px;
 }
 
 #title18 {
-    padding-left: 250px;
-    padding-top: 46px;
+  padding-left: 250px;
+  padding-top: 46px;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 300px;
-    width: 100%;
-    height: 250px;
-    background-image: url(../img/stone.png);
-    position: relative;
-    top: 1550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  width: 100%;
+  height: 250px;
+  background-image: url(../img/stone.png);
+  position: relative;
+  top: 1550px;
 }
 
 footer p {
-    width: 750px;
-    font-size: 1.2em;
+  width: 750px;
+  font-size: 1.2em;
 }
 
 #pexiHead {
-    width: 80px;
-    height: auto;
-    position: relative;
-    left: 100px;
+  width: 80px;
+  height: auto;
+  position: relative;
+  left: 100px;
 }
 
 #twitter {
-    width: 50px;
-    height: auto;
-    position: relative;
-    right: 400px;
-    top: 80px;
-    cursor: pointer;
+  width: 50px;
+  height: auto;
+  position: relative;
+  right: 400px;
+  top: 80px;
+  cursor: pointer;
 }
