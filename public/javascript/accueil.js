@@ -74,7 +74,7 @@ function accueilResponsive() {
 
     document.getElementById("textChanges").style.fontSize = "80%";
     pexipackLogo.style.paddingBottom = "100px";
-    textTop.style.margintop = "100px";
+    textTop.style.paddingTop = "50px";
     textTop.style.marginBottom = "50px";
     textTop.style.width = `${w - 50}px`;
 

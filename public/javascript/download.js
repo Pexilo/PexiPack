@@ -41,7 +41,7 @@ function downloadResponsive() {
     for (let y = 0; y < textTop.length; y++) {
       textTop[y].style.width = `${w - 50}px`;
       textTop[y].style.maxWidth = `${w}px`;
-      textTop[y].style.margintop = "100px";
+      textTop[y].style.paddingTop = "50px";
     }
   }
   if (w <= 640) {
@@ -56,9 +56,9 @@ function downloadResponsive() {
     titleContainer.removeChild(date);
     titleContainer.removeChild(size);
 
-    titleContainer.style.top = "25%";
+    titleContainer.style.top = "35%";
 
-    tabContainter.style.top = "25%";
+    tabContainter.style.top = "35%";
 
     for (let m = 0; m < pDate.length; m++) {
       pDate[m].style.visibility = "hidden";
