@@ -6,7 +6,9 @@
     <title>Informations</title>
     <link rel="icon" href="./img/pack.png" type="image/png" />
 
-    <link rel="stylesheet" href="../css/infos.css" />
+    <link rel="stylesheet" href="../css/information.css" />
+    <script src="../javascript/information.js" async /></script>
+    <script src="../javascript/versions.js" async></script>
     <audio
       id="audio"
       src="https://www.mboxdrive.com/minecraftclick.mp3"
@@ -14,7 +16,7 @@
   </head>
 
   <header>
-    <img src="../img/fondhaut.png" alt="header" />
+    <img src="../img/fondhaut.png" alt="header" id="fondHaut" />
   </header>
 
   <main>
@@ -46,7 +48,7 @@
       <a href="/">
         <img src="../img/pexipacklogo.png" alt="PexiPack" id="pexipacklogo" />
       </a>
-      <p id="text">
+      <p class="textBox">
         Le pack de texture "Pexipack" a été créé le 1er Septembre 2016 par
         Pexilo qui n’était pas satisfait des pack de textures disponibles en
         ligne, il a donc décidé de concevoir un pack ayant pour but de fournir
@@ -57,15 +59,15 @@
         de textures comme le "Steven traditional".
       </p>
 
-      <div class="containerSlideshow1">
-        <div class="containerSlide1">
-          <div class="slid1"><img src="../img/fond1.png" /></div>
-          <div class="slid2"><img src="../img/fond2.png" /></div>
-          <div class="slid3"><img src="../img/fond3.png" /></div>
+      <div class="containerSlideshow1" id="containerSlideBig1">
+        <div id="containerSlide1">
+          <div id="slid1"><img id="fondLarge1" src="../img/fond1.png" /></div>
+          <div id="slid2"><img id="fondLarge2" src="../img/fond2.png" /></div>
+          <div id="slid3"><img id="fondLarge3" src="../img/fond3.png" /></div>
         </div>
       </div>
 
-      <p id="text">
+      <p class="textBox">
         Le but de ce site est non lucratif et représente un moyen pratique
         d’accéder à toutes les versions du PexiPack pour tous les utilisateurs
         du pack. De plus il représente un challenge qui m’aidera au niveau de
@@ -77,16 +79,16 @@
     </div>
   </body>
 
-  <footer>
+  <footer id="footer">
     <img
-      src="../img/pack.png"
-      alt="Pexilo"
-      id="pexiHead"
-      title="hé c'est moi"
+            src="../img/pack.png"
+            alt="Pexilo"
+            id="pexiHead"
+            title="hé c'est moi"
     />
-    <p>PexiPack © Pexilo All rights reserved.</p>
-    <a onclick="twitterInfos()"
-      ><img src="../img/twitter.png" id="twitter" alt=""
+    <p id="textFooter">PexiPack © Pexilo All rights reserved.</p>
+    <a onclick="twitterAccueil()"
+    ><img src="../img/twitter.png" id="twitter" alt="twitter"
     /></a>
   </footer>
 </html>

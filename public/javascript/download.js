@@ -101,4 +101,5 @@ window.addEventListener("resize", () => {
   downloadResponsive();
   let w = document.documentElement.clientWidth;
   fondHaut.style.width = `${w}px`;
+  footer.style.width = `${w}px`;
 });

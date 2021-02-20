@@ -26,5 +26,5 @@ app.get("*", function (req, res, next) {
 });
 
 app.listen(port, function () {
-  console.log(`app running on ${port}`);
+  console.log(`Pexipack running on port ${port}`);
 });
