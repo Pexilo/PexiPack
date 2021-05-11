@@ -20,6 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/public/html/accueil.html" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectId" id="1oS5vnxbj7ZnfQvTrgkKWxHnEUH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,7 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../xampp/htdocs/exoinclusion" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\pexil\Documents\Projet pexipack\Dev\PexiPack\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -54,7 +57,13 @@
       <workItem from="1613500203719" duration="45000" />
       <workItem from="1613500629338" duration="1473000" />
       <workItem from="1613583933501" duration="6285000" />
-      <workItem from="1613786895591" duration="4464000" />
+      <workItem from="1613786895591" duration="5308000" />
+      <workItem from="1617884843997" duration="3601000" />
+      <workItem from="1617955921321" duration="1193000" />
+      <workItem from="1618210906992" duration="612000" />
+      <workItem from="1618324955290" duration="350000" />
+      <workItem from="1618326509425" duration="115000" />
+      <workItem from="1618469972042" duration="27000" />
     </task>
     <servers />
   </component>
