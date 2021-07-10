@@ -18,15 +18,23 @@ function optifine() {
     })
 };
 
-function V2_9bis() {
+function lastVersion() {
     sleep(500).then(() => {
 
-        window.open('https://www.mediafire.com/file/nkpwyygr8ldh2e4/', '_blank');
+        window.open('https://www.mediafire.com/file/raunc5wh96i8pfg/', '_blank');
 
         window.location = "https://pexipack-website.herokuapp.com/";
     })
 };
 
+function V3_0() {
+    sleep(500).then(() => {
+
+        window.open('https://www.mediafire.com/file/raunc5wh96i8pfg/', '_blank');
+
+        window.location = "https://pexipack-website.herokuapp.com/";
+    })
+};
 
 function V2_9() {
     sleep(500).then(() => {
