@@ -134,7 +134,7 @@ header img {
 #titleContainer {
     z-index: 1;
     width: 1000px;
-    height: 1535px;
+    height: 1607px;
     position: absolute;
     display: flex;
     top: 50%;
@@ -255,7 +255,7 @@ header img {
 }
 
 .tooltip:hover:after {
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: rgba(0, 0, 0, 0.884);
     border-radius: 5px;
     bottom: 32px;
     color: #fff;
@@ -275,65 +275,7 @@ header img {
 .title {
     width: 25px;
     height: 25px;
-    padding-left: 250px;
-    padding-top: 68px;
-}
-
-.titlebis {
-    width: 25px;
-    height: 25px;
-    padding-left: 262px;
-    padding-top: 44px;
-}
-
-#title21 {
-    padding-left: 250px;
-    padding-top: 25px;
-}
-
-#title20 {
-    padding-left: 250px;
-    padding-top: 43px;
-}
-
-#title19 {
-    padding-left: 250px;
-    padding-top: 42px;
-}
-
-#title18 {
-    padding-left: 250px;
-    padding-top: 45px;
-}
-
-#title17 {
-    padding-left: 250px;
-    padding-top: 42px;
-}
-
-#title16 {
-    padding-left: 250px;
-    padding-top: 44px;
-}
-
-#title15 {
-    padding-left: 250px;
-    padding-top: 45px;
-}
-
-#title14 {
-    padding-left: 250px;
-    padding-top: 45px;
-}
-
-#title13 {
-    padding-left: 250px;
-    padding-top: 45px;
-}
-
-#title12 {
-    padding-left: 250px;
-    padding-top: 45px;
+    margin: 22px 0 22px 250px;
 }
 
 footer {
