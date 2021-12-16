@@ -21,7 +21,16 @@ function optifine() {
 function lastVersion() {
     sleep(500).then(() => {
 
-        window.open('https://www.mediafire.com/file/tqgxf2dtmfe0ozs/', '_blank');
+        window.open('https://www.mediafire.com/file/0psqarh68v1i2h0/', '_blank');
+
+        window.location = "https://pexipack-website.herokuapp.com/";
+    })
+};
+
+function V3_2() {
+    sleep(500).then(() => {
+
+        window.open('https://www.mediafire.com/file/0psqarh68v1i2h0/', '_blank');
 
         window.location = "https://pexipack-website.herokuapp.com/";
     })

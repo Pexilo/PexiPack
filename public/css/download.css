@@ -118,7 +118,7 @@ header img {
 .textTop {
     width: 1000px;
     height: auto;
-    margin-bottom: 50px;
+    margin-top: 100px;
 }
 
 #pexipacklogo {
@@ -134,7 +134,7 @@ header img {
 #titleContainer {
     z-index: 1;
     width: 1000px;
-    height: 1607px;
+    height: 1680px;
     position: absolute;
     display: flex;
     top: 50%;
@@ -287,7 +287,7 @@ footer {
     height: 250px;
     background-image: url(../img/stone.png);
     position: relative;
-    top: 1550px;
+    top: 1750px;
 }
 
 footer p {

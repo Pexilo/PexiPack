@@ -1,0 +1,29 @@
+body {
+    overflow-x: hidden; 
+  }
+
+html::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #583b25;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar {
+  width: 7px;
+  background-color: #583b25;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #3a8925; 
+  border-radius: 10px;
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+}

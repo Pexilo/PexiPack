@@ -204,7 +204,7 @@ footer {
   height: 250px;
   background-image: url(../img/stone.png);
   position: relative;
-  top: 200px;
+  top: 0px;
 }
 
 footer p {

@@ -8,6 +8,7 @@
     <link rel="icon" href="./img/pack.png" type="image/png" />
 
     <link rel="stylesheet" href="../css/download.css" />
+    <link rel="stylesheet" href="../css/scrollbar.css" />
     <script src="../javascript/versions.js" async></script>
     <script src="../javascript/download.js" async></script>
     <audio id="audio" src="https://www.mboxdrive.com/minecraftclick.mp3"></audio>
@@ -40,20 +41,24 @@
             <img src="../img/pexipacklogo.png" alt="PexiPack" id="pexipacklogo" />
         </a>
         <p class="textTop">
-            Cette page répertorie toutes les versions du PexiPack, je vous conseille d'utiliser la dernière mise à jour du pack selon la version de jeu souhaité, à noter que la qualité du PexiPack est dégressif, suivant la version les textures peuvent changer.
-        </p>
+            Cette page répertorie toutes les versions du PexiPack, je vous conseille d'utiliser la dernière mise à jour du pack selon la version de jeu souhaité, à noter que la qualité du PexiPack est dégressive, suivant la version les textures peuvent changer.        </p>
         <p class="textTop">
-            Pensez à régler les paramètres graphiques sur "Fancy"/"Détaillé" pour que le pack de texture fonctionne correctement. L'utilisation d'optifine est recommandé.
+            Pensez à régler les paramètres graphiques sur "Fancy"/"Détaillé" pour que le pack de texture fonctionne correctement. L'utilisation d'opticien est recommandée.
         </p>
 
         <div id="titleContainer">
             <div id="version"></div>
             <div id="name">
-                <a class="tooltip" title="Optimisation et compression des textures, pack plus léger (-37,5Mo),
-            Correctifs de textures comme le soulfire,
-            Ajout d'emojis et couleur de texte pour les items enchantés (ic's Better Enchantments).">
+                <a class="tooltip" title="Araignés et Phamtoms verts fixés,
+                Minerais de diamants corrigés,
+                Mis à jour pour la 1.18.">
                     <img title="" class="title" src="../img/info.png" alt="infos" />
-                </a>
+                </a> 
+                <a class="tooltip" title="Optimisation et compression des textures, pack plus léger (-37,5Mo),
+                Correctifs de textures comme le soulfire,
+                Ajout d'emojis et couleur de texte pour les items enchantés (ic's Better Enchantments).">
+                        <img title="" class="title" src="../img/info.png" alt="infos" />
+                    </a>
                 <a class="tooltip" title="Changements des musiques de menu (MHW Main Theme - Stars At Our Backs, 		MHS 2 - Main Theme & BOTW : Revali's Theme).
             Nouveau logo moins clair et plus propre.
             Ajouts des textures de la 1.17.
@@ -174,7 +179,10 @@
             <div id="size"></div>
             <div id="date"></div>
             <div id="download">
-                <button onclick="play(); V3_1()" class="buttonDownload">
+                <button onclick="play(); V3_2()" class="buttonDownload">
+                    <p>TÉLÉCHARGER</p>
+                  </button>  
+                  <button onclick="play(); V3_1()" class="buttonDownload">
                     <p>TÉLÉCHARGER</p>
                   </button>
                 <button onclick="play(); V3_0()" class="buttonDownload">
@@ -244,6 +252,12 @@
         </div>
 
         <div id="tabContainer">
+            <div class="line">
+                <p class="pVersion">1.18</p>
+                <p class="pName">Pexipack v3.2</p>
+                <p class="pSize">26,91 MB</p>
+                <p class="pDate">16 / 12 / 2021</p>
+            </div>
             <div class="line">
                 <p class="pVersion">1.17</p>
                 <p class="pName">Pexipack v3.1</p>
