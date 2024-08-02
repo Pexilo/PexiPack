@@ -1,24 +1,21 @@
 {
-    "name": "pexipack",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-        "start": "node server.js"
-    },
-    "dependencies": {
-        "body-parser": "^1.19.0",
-        "express": "^4.17.1",
-        "express-http-to-https": "^1.1.4",
-        "fs": "0.0.1-security",
-        "http": "^0.0.1-security",
-        "https": "^1.0.0",
-        "path": "^0.12.7"
-    },
-    "devDependencies": {
-        "prettier": "2.2.1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC"
+  "name": "pexipack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "homepage": "https://pexilo.github.io/PexiPack",
+  "dependencies": {
+    "path": "^0.12.7",
+    "pexipack": "file:"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "prettier": "2.2.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
